@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body{
+        padding-top: 5rem;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+      }
+      .calculator{
+        display: inline-block;
+        background-color: rgb(197, 196, 196);
+        width: 13rem;
+        height: 14rem;
+        border: 2px solid black;
+        border-radius: 8px;
+      }
+      p{
+        /* margin: 0; */
+      }
+      button{
+        margin-right: 3px;
+      }
+      button:active{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div  title="let's solve some math" class="calculator">
+      <div class="header">
+        <h4>Chibike's Calculator</h4>
+      </div>
+      <p>
+        <button onclick="
+          solve+='1';
+          console.log(solve);
+          ">1</button>
+        <button onclick="
+        solve+='2';
+        console.log(solve);
+        ">2</button>
+        <button onclick="
+        solve+='3';
+        console.log(solve);
+        ">3</button>
+        <button onclick="
+        solve+='4';
+        console.log(solve);
+        ">4</button>
+        <button onclick="
+        solve+='+';
+        console.log(solve);
+        ">+</button>
+        <button onclick="
+        solve+='-';
+        console.log(solve);
+        ">-</button>
+      </p>
+      <p>
+        <button onclick="
+        solve+='5';
+        console.log(solve);
+        ">5</button>
+        <button onclick="
+        solve+='6';
+        console.log(solve);
+        ">6</button>
+        <button onclick="
+        solve+='7';
+        console.log(solve);
+        ">7</button>
+        <button onclick="
+        solve+='8';
+        console.log(solve);
+        ">8</button>
+        <button onclick="
+        solve+='*';
+        console.log(solve);
+        ">*</button>
+        <button onclick="
+        solve+='/';
+        console.log(solve);
+        ">/</button>
+      </p>
+      <p>
+        <button onclick="
+        solve+='9';
+        console.log(solve);
+        ">9</button>
+        <button onclick="
+        solve+='0';
+        console.log(solve);
+        ">0</button>
+        <button onclick="
+        solve+='.';
+        console.log(solve);
+        ">.</button>
+        <button onclick="
+        solve+='**';
+        console.log(solve);
+        ">**</button>
+        <button onclick="
+        alert(solve=eval(solve));
+        console.log(solve);
+        ">=</button>
+        <button onclick="
+        solve+='(';
+        console.log(solve);
+        ">(</button>
+        <button 
+        onclick="
+          solve+=')';
+          console.log(solve);
+          ">)</button>
+      </p>
+    </div>
+    <script>
+      let solve = '';
+    </script>
+  </body>
+</html>
